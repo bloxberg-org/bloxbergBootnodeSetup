@@ -17,6 +17,7 @@ check_packages() {
 	sudo apt install chrony
 	sudo systemctl enable chrony
 	sudo systemctl start chronyd
+	sudo chown -R 1000:1000 ./bootnode
 }
 
 

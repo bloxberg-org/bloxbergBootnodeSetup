@@ -1,4 +1,4 @@
-# File exampleNode.toml
+# File bootnode.toml
 
 [parity]
 chain = "/home/parity/.local/share/io.parity.ethereum/bloxberg.json"
