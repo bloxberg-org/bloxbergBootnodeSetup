@@ -1,0 +1,34 @@
+# File exampleNode.toml
+
+[parity]
+chain = "/home/parity/.local/share/io.parity.ethereum/bloxberg.json"
+base_path = "/home/parity/.local/share/io.parity.ethereum/bootnode"
+
+[network]
+port = 30303
+reserved_peers = "/home/parity/.local/share/io.parity.ethereum/bootnodes.txt"
+max_peers = 100
+snapshot_peers = 25
+nat = "extip:*INSERT EXTERNAL IP HERE*"
+
+[rpc]
+port = 8545
+apis = ["web3", "eth", "net", "personal", "parity", "parity_set", "traces", "rpc", "parity_accounts"]
+interface = "all"
+cors = ["*"]
+
+[websockets]
+disable = false
+port = 8546
+interface = "all"
+origins = ["all"]
+
+[account]
+password = ["/home/parity/.local/share/io.parity.ethereum/bootnode.pwd"]
+
+[footprint]
+tracing = "on"
+pruning = "archive"
+pruning_history = 256
+cache_size_db = 2000
+
