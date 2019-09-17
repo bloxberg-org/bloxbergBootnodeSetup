@@ -7,7 +7,7 @@ base_path = "/home/parity/.local/share/io.parity.ethereum/bootnode"
 [network]
 port = 30303
 reserved_peers = "/home/parity/.local/share/io.parity.ethereum/bootnodes.txt"
-reserved_only = true
+# reserved_only = true
 max_peers = 100
 snapshot_peers = 25
 nat = "extip:*INSERT EXTERNAL IP HERE*"
