@@ -33,3 +33,5 @@ pruning = "archive"
 pruning_history = 256
 cache_size_db = 2000
 
+[misc]
+# logging = "discovery=trace"
