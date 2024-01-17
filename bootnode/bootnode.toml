@@ -10,6 +10,7 @@ reserved_peers = "/home/parity/.local/share/io.parity.ethereum/bootnodes.txt"
 # reserved_only = true
 max_peers = 100
 snapshot_peers = 25
+# warp = true
 nat = "extip:*INSERT EXTERNAL IP HERE*"
 
 [rpc]
