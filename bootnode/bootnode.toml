@@ -29,10 +29,15 @@ origins = ["all"]
 password = ["/home/parity/.local/share/io.parity.ethereum/bootnode.pwd"]
 
 [footprint]
-tracing = "on"
-pruning = "archive"
-pruning_history = 256
-cache_size_db = 2000
+tracing = "off"
+pruning = "fast"
+pruning_history = 64
+cache_size_db = 128
+cache_size = 256
+
+[snapshots]
+# Disables automatic periodic snapshots.
+disable_periodic = true
 
 [misc]
 # logging = "discovery=trace"
