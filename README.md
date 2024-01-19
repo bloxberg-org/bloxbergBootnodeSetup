@@ -4,7 +4,8 @@ The bloxberg bootnode plays a crucial role in the network by enabling new nodes 
 
 The blockchain connects to other nodes via UDP and TCP port 30303, so it is important this port is open via your firewall beforehand.
 
-In the docker-compose.yml you will also see the ports 8545 (JSON-RPC API) and 8546 (Web-Socket). These can be used to interact with blockchain via means of your local node but don't need to be accessible over the internet.
+In the docker-compose.yml you will also see the ports 8545 (JSON-RPC API) and 8546 (Web-Socket). Those port don't have to be open for public Internet network as they are used to interact with the blockchain via your
+local node
 
 The above ports are already in use if you are currently running the Validator node. If so, you can visit bootnode.yml and modify the port number to 30304,8547,8548. and make sure to open port 30304 via your firewall.
 Eg.   ports:
