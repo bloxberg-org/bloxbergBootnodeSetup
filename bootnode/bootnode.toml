@@ -11,7 +11,7 @@ max_peers = 100
 snapshot_peers = 25
 discovery = true
 # warp = true
-nat = "extip:130.183.252.11"
+nat = "extip:*INSERT EXTERNAL IP HERE*"
 
 [rpc]
 disable = false
