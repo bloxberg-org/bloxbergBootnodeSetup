@@ -7,13 +7,14 @@ base_path = "/home/parity/.local/share/io.parity.ethereum/bootnode"
 [network]
 port = 30303
 reserved_peers = "/home/parity/.local/share/io.parity.ethereum/bootnodes.txt"
-# reserved_only = true
 max_peers = 100
 snapshot_peers = 25
+discovery = true
 # warp = true
-nat = "extip:*INSERT EXTERNAL IP HERE*"
+nat = "extip:130.183.252.11"
 
 [rpc]
+disable = false
 port = 8545
 apis = ["web3", "eth", "net", "personal", "parity", "parity_set", "traces", "rpc", "parity_accounts"]
 interface = "all"
@@ -29,15 +30,10 @@ origins = ["all"]
 password = ["/home/parity/.local/share/io.parity.ethereum/bootnode.pwd"]
 
 [footprint]
-tracing = "off"
-pruning = "fast"
-pruning_history = 64
-cache_size_db = 128
-cache_size = 256
-
-[snapshots]
-# Disables automatic periodic snapshots.
-disable_periodic = true
+tracing = "on"
+pruning = "archive"
+#pruning_history = 256
+#cache_size_db = 2000
 
 [misc]
 # logging = "discovery=trace"
